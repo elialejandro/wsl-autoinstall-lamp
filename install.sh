@@ -1,8 +1,8 @@
 #!/bin/bash
 
 apache_config_file="/etc/apache2/apache2.conf"
-php_config_file="/etc/php/7.2/apache2/php.ini"
-xdebug_config_file="/etc/php/7.2/mods-available/xdebug.ini"
+php_config_file="/etc/php/8.1/apache2/php.ini"
+xdebug_config_file="/etc/php/8.1/mods-available/xdebug.ini"
 mysql_config_file="/etc/mysql/my.cnf"
 
 # Update the server
