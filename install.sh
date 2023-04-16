@@ -31,7 +31,7 @@ usermod -d /var/lib/mysql/ mysql
 service mysql start
 
 # Allow root access from any host
-echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'secret' WITH GRANT OPTION" | mysql -u root --password=secret
+echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'secret' WITH GRANT OPTION" | mysql -u root --password=secret
 echo "GRANT PROXY ON ''@'' TO 'root'@'%' WITH GRANT OPTION" | mysql -u root --password=secret
 service mysql restart
 
